@@ -21,11 +21,14 @@ public class belMain {
 	  String[] options2 = {"Answer Call", "Decline Call", "Toss phone in ravine"};
 	  String[] options3 = {"Answer Call", "Decline Call", "Toss phone in ravine"};
 	  String[] options4 = {"Answer Call", "Decline Call", "Toss phone in ravine"};
-      Object result = 0;
+	  String[] options5 = {"Continue through the minefield", "Cut left", "Cut right"};
+	  Object result = 0;
 	  Object result1 = 0; 
       Object result2 = 0;
       Object result3 = 0;
       Object result4 = 0;
+      Object result5 = 0;
+      Object result6 = 0;
 
 	  //RIGHT HERE^^^
      while(result != options[0] ){
@@ -43,6 +46,7 @@ public class belMain {
 
 
       //^LIST^HERE^
+     //MAIN MENU
       if(result==options[1]){
     	  JOptionPane.showMessageDialog(null,
   			    "Welcome to Behind Enemy Lines (BEL). In this sweet adventure game your objective is to complete the task at hand! \nOnce you start the game it will allow you to start your mission! \nThe General will tell you your mission once you start the game. \nGood luck soldier!",
@@ -63,7 +67,8 @@ public class belMain {
 
     }
    }
-  if(result==options[0]){
+     //First Default Question after you click Play!
+     if(result==options[0]){
 	  
 
       JOptionPane myOptionPane1 = new JOptionPane("Who would you like to play as?",  JOptionPane.PLAIN_MESSAGE, JOptionPane.YES_NO_OPTION, null, options1, options1[2]);
@@ -77,16 +82,52 @@ public class belMain {
     
   
   }
+  			//Private Norman
   			if(result1==options1[0]){
-	 JOptionPane myOptionPane2 = new JOptionPane("Welcome to the task force! You have chosen Private Norman! \nYour captain is calling you. \nYou have: 10 men left. ",  JOptionPane.PLAIN_MESSAGE, JOptionPane.YES_NO_OPTION, null, options2, options2[2]);
-     JDialog myDialog2 = myOptionPane2.createDialog(null, "Behind Enemy Lines");
-     myDialog2.setModal(true);
+  				 JOptionPane myOptionPane2 = new JOptionPane("Welcome to the task force! You have chosen Private Norman! \nYour captain is calling you. \nYou have: 10 men left. ",  JOptionPane.PLAIN_MESSAGE, JOptionPane.YES_NO_OPTION, null, options2, options2[2]);
+	 			 JDialog myDialog2 = myOptionPane2.createDialog(null, "Behind Enemy Lines");
+     			 myDialog2.setModal(true);
 
     
-     myDialog2.setVisible(true);
-     result2 = myOptionPane2.getValue();
- }
- 			if(result1==options1[1]){
+     			 myDialog2.setVisible(true);
+     			 result2 = myOptionPane2.getValue();
+     			
+     			 		//if clicked "Answer call" -Norman
+     			 		if(result2==options2[0]){
+     			 				JOptionPane myOptionPane5 = new JOptionPane("Welcome to the task force! You have chosen Private Norman! \nYour captain is calling you. \nYou have: 10 men left. ",  JOptionPane.PLAIN_MESSAGE, JOptionPane.YES_NO_OPTION, null, options5, options5[2]);
+     			 				JDialog myDialog5 = myOptionPane5.createDialog(null, "Behind Enemy Lines");
+     			 				myDialog5.setModal(true);
+
+       
+     			 				myDialog5.setVisible(true);
+     			 				result5 = myOptionPane5.getValue();
+     			 }
+     			 		//if clicked "declined call" -Norman
+     			 		if(result2==options2[1]){
+ 			 				JOptionPane myOptionPane5 = new JOptionPane("Welcome to the task force! You have chosen Private Norman! \nYour captain is calling you. \nYou have: 10 men left. ",  JOptionPane.PLAIN_MESSAGE, JOptionPane.YES_NO_OPTION, null, options5, options5[2]);
+ 			 				JDialog myDialog5 = myOptionPane5.createDialog(null, "Behind Enemy Lines");
+ 			 				myDialog5.setModal(true);
+
+   
+ 			 				myDialog5.setVisible(true);
+ 			 				result5 = myOptionPane5.getValue();
+ 			 	
+ 			 		}
+     			 		//if clicked "toss phone in ravine" -Norman
+     			 		if(result2==options2[2]){
+ 			 				JOptionPane myOptionPane5 = new JOptionPane("Welcome to the task force! You have chosen Private Norman! \nYour captain is calling you. \nYou have: 10 men left. ",  JOptionPane.PLAIN_MESSAGE, JOptionPane.YES_NO_OPTION, null, options5, options5[2]);
+ 			 				JDialog myDialog5 = myOptionPane5.createDialog(null, "Behind Enemy Lines");
+ 			 				myDialog5.setModal(true);
+
+   
+ 			 				myDialog5.setVisible(true);
+ 			 				result5 = myOptionPane5.getValue();
+ 			 	
+ 			 		}
+     			 
+  }
+ 			//Sergeant Phillips
+  			if(result1==options1[1]){
  				 JOptionPane myOptionPane3 = new JOptionPane("Welcome to the task force! You have chosen Sergeant Phillips! \nYour captain is calling you. ",  JOptionPane.PLAIN_MESSAGE, JOptionPane.YES_NO_OPTION, null, options2, options2[2]);
  			     JDialog myDialog3 = myOptionPane3.createDialog(null, "Behind Enemy Lines");
  			     myDialog3.setModal(true);
@@ -95,7 +136,8 @@ public class belMain {
  			     myDialog3.setVisible(true);
  			     result3 = myOptionPane3.getValue();
   }
- 			if(result1==options1[2]){
+ 			//Doctor Charles
+  			if(result1==options1[2]){
  				 JOptionPane myOptionPane3 = new JOptionPane("Welcome to the task force! You have chosen Doctor Charles! \nYour captain is calling you. ",  JOptionPane.PLAIN_MESSAGE, JOptionPane.YES_NO_OPTION, null, options2, options2[2]);
  			     JDialog myDialog3 = myOptionPane3.createDialog(null, "Behind Enemy Lines");
  			     myDialog3.setModal(true);
