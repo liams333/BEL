@@ -29,6 +29,24 @@ public class belMain {
       Object result4 = 0;
       Object result5 = 0;
       Object result6 = 0;
+      Object result7 = 0;
+      Object result8 = 0;
+      Object result9 = 0;
+      Object result10 = 0;
+      Object result11 = 0;
+      Object result12 = 0;
+      Object result13 = 0;
+      Object result14 = 0;
+      Object result15 = 0;
+      Object result16 = 0;
+      Object result17 = 0;
+      Object result18 = 0;
+      Object result19 = 0;
+      Object result20 = 0;
+      Object result21 = 0;
+      Object result22 = 0;
+      Object result23 = 0;
+      
 
 	  //RIGHT HERE^^^
      while(result != options[0] ){
@@ -94,7 +112,7 @@ public class belMain {
      			
      			 		//if clicked "Answer call" -Norman
      			 		if(result2==options2[0]){
-     			 				JOptionPane myOptionPane5 = new JOptionPane("Welcome to the task force! You have chosen Private Norman! \nYour captain is calling you. \nYou have: 10 men left. ",  JOptionPane.PLAIN_MESSAGE, JOptionPane.YES_NO_OPTION, null, options5, options5[2]);
+     			 				JOptionPane myOptionPane5 = new JOptionPane("You are sent on an operation to wreak havoc in the city of Rhode Island. \nPolar-Force is a death squad. \nOutside Rhode island you and your squad of 8 accidentatlly snuck into an old mine field from the battle fought there many years ago, \nyour commanding officer died. You are the new commanding officer.",  JOptionPane.PLAIN_MESSAGE, JOptionPane.YES_NO_OPTION, null, options5, options5[2]);
      			 				JDialog myDialog5 = myOptionPane5.createDialog(null, "Behind Enemy Lines");
      			 				myDialog5.setModal(true);
 
@@ -104,24 +122,18 @@ public class belMain {
      			 }
      			 		//if clicked "declined call" -Norman
      			 		if(result2==options2[1]){
- 			 				JOptionPane myOptionPane5 = new JOptionPane("Welcome to the task force! You have chosen Private Norman! \nYour captain is calling you. \nYou have: 10 men left. ",  JOptionPane.PLAIN_MESSAGE, JOptionPane.YES_NO_OPTION, null, options5, options5[2]);
- 			 				JDialog myDialog5 = myOptionPane5.createDialog(null, "Behind Enemy Lines");
- 			 				myDialog5.setModal(true);
-
-   
- 			 				myDialog5.setVisible(true);
- 			 				result5 = myOptionPane5.getValue();
+     			 			JOptionPane.showMessageDialog(null,
+     			 	  			    "You go back to sleep.. \nBut then all around you bombs go off as your camp is attacked by 'muricans, \nthe american soldiers. YOU DIE",
+     			 	  			    "Behind Enemy Lines - Game Over",
+     			 	  			    JOptionPane.PLAIN_MESSAGE);
  			 	
  			 		}
      			 		//if clicked "toss phone in ravine" -Norman
      			 		if(result2==options2[2]){
- 			 				JOptionPane myOptionPane5 = new JOptionPane("Welcome to the task force! You have chosen Private Norman! \nYour captain is calling you. \nYou have: 10 men left. ",  JOptionPane.PLAIN_MESSAGE, JOptionPane.YES_NO_OPTION, null, options5, options5[2]);
- 			 				JDialog myDialog5 = myOptionPane5.createDialog(null, "Behind Enemy Lines");
- 			 				myDialog5.setModal(true);
-
-   
- 			 				myDialog5.setVisible(true);
- 			 				result5 = myOptionPane5.getValue();
+     			 			JOptionPane.showMessageDialog(null,
+     			 	  			    "As you wind up your arm and run to the edge to throw the radio you let go and realize you forgot to take the wrist strap off and you fall off the cliff... YOU DIE",
+     			 	  			    "Behind Enemy Lines - Game Over",
+     			 	  			    JOptionPane.PLAIN_MESSAGE);
  			 	
  			 		}
      			 
@@ -135,16 +147,70 @@ public class belMain {
  			    
  			     myDialog3.setVisible(true);
  			     result3 = myOptionPane3.getValue();
+ 			     
+ 			     		//if clicked "Answer call" -Phillips
+			 		if(result3==options3[0]){
+			 				JOptionPane myOptionPane6 = new JOptionPane("You are sent on an operation to wreak havoc in the city of Rhode Island. \nPolar-Force is a death squad. \nOutside Rhode island you and your squad of 8 accidentatlly snuck into an old mine field from the battle fought there many years ago, \nyour commanding officer died. You are the new commanding officer.",  JOptionPane.PLAIN_MESSAGE, JOptionPane.YES_NO_OPTION, null, options5, options5[2]);
+			 				JDialog myDialog6 = myOptionPane6.createDialog(null, "Behind Enemy Lines");
+			 				myDialog6.setModal(true);
+
+
+			 				myDialog6.setVisible(true);
+			 				result6 = myOptionPane6.getValue();
+			 }
+			 			//if clicked "declined call" -Phillips
+			 		if(result3==options3[1]){
+			 			JOptionPane.showMessageDialog(null,
+			 	  			    "You go back to sleep.. \nBut then all around you bombs go off as your camp is attacked by 'muricans, \nthe american soldiers. YOU DIE",
+			 	  			    "Behind Enemy Lines - Game Over",
+			 	  			    JOptionPane.PLAIN_MESSAGE);
+		 	
+		 		}
+			 			//if clicked "toss phone in ravine" -Phillips
+			 		if(result3==options3[2]){
+			 			JOptionPane.showMessageDialog(null,
+			 	  			    "As you wind up your arm and run to the edge to throw the radio you let go and realize you forgot to take the wrist strap off and you fall off the cliff... YOU DIE",
+			 	  			    "Behind Enemy Lines - Game Over",
+			 	  			    JOptionPane.PLAIN_MESSAGE);
+		 	
+		 		}
   }
  			//Doctor Charles
   			if(result1==options1[2]){
- 				 JOptionPane myOptionPane3 = new JOptionPane("Welcome to the task force! You have chosen Doctor Charles! \nYour captain is calling you. ",  JOptionPane.PLAIN_MESSAGE, JOptionPane.YES_NO_OPTION, null, options2, options2[2]);
- 			     JDialog myDialog3 = myOptionPane3.createDialog(null, "Behind Enemy Lines");
- 			     myDialog3.setModal(true);
+ 				 JOptionPane myOptionPane4 = new JOptionPane("Welcome to the task force! You have chosen Doctor Charles! \nYour captain is calling you. ",  JOptionPane.PLAIN_MESSAGE, JOptionPane.YES_NO_OPTION, null, options2, options2[2]);
+ 			     JDialog myDialog4 = myOptionPane4.createDialog(null, "Behind Enemy Lines");
+ 			     myDialog4.setModal(true);
 
  			    
- 			     myDialog3.setVisible(true);
- 			     result3 = myOptionPane3.getValue();
+ 			     myDialog4.setVisible(true);
+ 			     result4 = myOptionPane4.getValue();
+ 			     
+ 			     		//if clicked "Answer call" -Charles
+			 		if(result4==options4[0]){
+			 				JOptionPane myOptionPane7 = new JOptionPane("You are sent on an operation to wreak havoc in the city of Rhode Island. \nPolar-Force is a death squad. \nOutside Rhode island you and your squad of 8 accidentatlly snuck into an old mine field from the battle fought there many years ago, \nyour commanding officer died. You are the new commanding officer.",  JOptionPane.PLAIN_MESSAGE, JOptionPane.YES_NO_OPTION, null, options5, options5[2]);
+			 				JDialog myDialog7 = myOptionPane7.createDialog(null, "Behind Enemy Lines");
+			 				myDialog7.setModal(true);
+
+
+			 				myDialog7.setVisible(true);
+			 				result7 = myOptionPane7.getValue();
+			 }
+			 			//if clicked "declined call" -Charles
+			 		if(result4==options4[1]){
+			 			JOptionPane.showMessageDialog(null,
+			 	  			    "You go back to sleep.. \nBut then all around you bombs go off as your camp is attacked by 'muricans, \nthe american soldiers. YOU DIE",
+			 	  			    "Behind Enemy Lines - Game Over",
+			 	  			    JOptionPane.PLAIN_MESSAGE);
+		 	
+		 		}
+			 			//if clicked "toss phone in ravine" -Charles
+			 		if(result4==options4[2]){
+			 			JOptionPane.showMessageDialog(null,
+			 	  			    "As you wind up your arm and run to the edge to throw the radio you let go and realize you forgot to take the wrist strap off and you fall off the cliff... YOU DIE",
+			 	  			    "Behind Enemy Lines - Game Over",
+			 	  			    JOptionPane.PLAIN_MESSAGE);
+		 	
+		 		}
   }
 }
 
