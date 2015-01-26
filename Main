@@ -49,7 +49,7 @@ public class belMain {
       
 
 	  //RIGHT HERE^^^
-     while(result != options[0] ){
+    do {
     	 ImageIcon icon = new ImageIcon(belMain.class.getResource("/resources/img/belLogo.png"));
     	 JOptionPane myOptionPane = new JOptionPane(null,  JOptionPane.PLAIN_MESSAGE, JOptionPane.YES_NO_OPTION, icon, options, options[2]);
       JDialog myDialog = myOptionPane.createDialog(null, "Behind Enemy Lines");
@@ -84,7 +84,8 @@ public class belMain {
 
 
     }
-   }
+      
+   }while(result == options[1] || result == options[2]);
      //First Default Question after you click Play!
      if(result==options[0]){
 	  
