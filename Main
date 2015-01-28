@@ -22,6 +22,18 @@ public class belMain {
 	  String[] options3 = {"Answer Call", "Decline Call", "Toss phone in ravine"};
 	  String[] options4 = {"Answer Call", "Decline Call", "Toss phone in ravine"};
 	  String[] options5 = {"Continue through the minefield", "Cut left", "Cut right"};
+	  String[] options6 = {"Continue through the minefield", "Cut left", "Cut right"};
+	  String[] options7 = {"Continue through the minefield", "Cut left", "Cut right"};
+	  String[] options8 = {"Continue through the minefield", "Cut left", "Cut right"};
+	  String[] options9 = {"Continue through the minefield", "Cut left", "Cut right"};
+	  String[] options10 = {"Continue through the minefield", "Cut left", "Cut right"};
+	  String[] options11 = {"Continue through the minefield", "Cut left", "Cut right"};
+	  String[] options12 = {"Continue through the minefield", "Cut left", "Cut right"};
+	  String[] options13 = {"Continue through the minefield", "Cut left", "Cut right"};
+	  String[] options14 = {"Continue through the minefield", "Cut left", "Cut right"};
+	  String[] options15= {"Continue through the minefield", "Cut left", "Cut right"};
+	  String[] options16 = {"Continue through the minefield", "Cut left", "Cut right"};
+	  
 	  Object result = 0;
 	  Object result1 = 0; 
       Object result2 = 0;
@@ -103,7 +115,7 @@ public class belMain {
   }
   			//Private Norman
   			if(result1==options1[0]){
-  				 JOptionPane myOptionPane2 = new JOptionPane("Welcome to the task force! You have chosen Private Norman! \nYour captain is calling you. \nYou have: 10 men left. ",  JOptionPane.PLAIN_MESSAGE, JOptionPane.YES_NO_OPTION, null, options2, options2[2]);
+  				 JOptionPane myOptionPane2 = new JOptionPane("Welcome to the task force! You have chosen Private Norman! \nYour captain is calling you.",  JOptionPane.PLAIN_MESSAGE, JOptionPane.YES_NO_OPTION, null, options2, options2[2]);
 	 			 JDialog myDialog2 = myOptionPane2.createDialog(null, "Behind Enemy Lines");
      			 myDialog2.setModal(true);
 
@@ -120,7 +132,42 @@ public class belMain {
        
      			 				myDialog5.setVisible(true);
      			 				result5 = myOptionPane5.getValue();
-     			 }
+     			 
+     			 					//if clicked "go through minefield" -Norman
+     			 					if(result5==options5[0]){
+     	     			 				JOptionPane myOptionPane8 = new JOptionPane("You perservere through the minefield make it to the end although another one of your men perished due to a mine, \nPrivate Wilson has died.\n\n(6 poeple left) A sniper outpost lies ahead with 3 units on it, one of them is in the tower with a radio. \nYou have two silenced sniper rifles, grappling hooks and a bazooka, \nall of which may be used",  JOptionPane.PLAIN_MESSAGE, JOptionPane.YES_NO_OPTION, null, options5, options5[2]);
+     	     			 				JDialog myDialog8 = myOptionPane8.createDialog(null, "Behind Enemy Lines");
+     	     			 				myDialog8.setModal(true);
+
+     	       
+     	     			 				myDialog8.setVisible(true);
+     	     			 				result8 = myOptionPane8.getValue();
+     	     			 
+     	     			 				
+     	     			 				
+     	     			 		
+     	     			 		}
+     			 					//if clicked "cut left" -Norman
+     			 					if(result2==options2[1]){
+     	     			 			JOptionPane.showMessageDialog(null,
+     	     			 	  			    "You go back to sleep.. \nBut then all around you bombs go off as your camp is attacked by 'muricans, \nthe american soldiers. YOU DIE",
+     	     			 	  			    "Behind Enemy Lines - Game Over",
+     	     			 	  			    JOptionPane.PLAIN_MESSAGE);
+     	 			 	
+     	 			 		}
+     			 					//if clicked "cut right" -Norman
+     			 					if(result2==options2[2]){
+     	     			 			JOptionPane.showMessageDialog(null,
+     	     			 	  			    "As you wind up your arm and run to the edge to throw the radio you let go and realize you forgot to take the wrist strap off and you fall off the cliff... YOU DIE",
+     	     			 	  			    "Behind Enemy Lines - Game Over",
+     	     			 	  			    JOptionPane.PLAIN_MESSAGE);
+     	 			 	
+     	 			 		}
+     	     			 
+     	  }
+     			 				
+     			 		
+     			 		}
      			 		//if clicked "declined call" -Norman
      			 		if(result2==options2[1]){
      			 			JOptionPane.showMessageDialog(null,
@@ -138,7 +185,7 @@ public class belMain {
  			 	
  			 		}
      			 
-  }
+  
  			//Sergeant Phillips
   			if(result1==options1[1]){
  				 JOptionPane myOptionPane3 = new JOptionPane("Welcome to the task force! You have chosen Sergeant Phillips! \nYour captain is calling you. ",  JOptionPane.PLAIN_MESSAGE, JOptionPane.YES_NO_OPTION, null, options2, options2[2]);
